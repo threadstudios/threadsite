@@ -10,7 +10,7 @@ import { ThreadTable } from './service/thread.table.service';
 
 @Module({
   imports: [ConfigModule.forRoot()],
-  controllers: [AppController, WebhookController],
+  controllers: [WebhookController, AppController],
   providers: [
     ThreadTable,
     DynamoService,
