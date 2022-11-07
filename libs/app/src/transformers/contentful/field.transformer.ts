@@ -2,7 +2,7 @@ import { documentToHtmlString } from '@contentful/rich-text-html-renderer';
 import { EntryFields } from 'contentful';
 
 function isContentField(field) {
-  return field.nodeType === 'document';
+  return field.nodeType && field.nodeType === 'document';
 }
 
 function isResolveableField(field) {
