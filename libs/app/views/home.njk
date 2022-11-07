@@ -1,0 +1,7 @@
+{% extends "./layouts/main.njk" %}
+
+{% block content %}
+    {% for c in content.pageElements %}
+        {% component c %}
+    {% endfor %}
+{% endblock %}

@@ -1,0 +1,1 @@
+web: node libs/app/dist/main.js

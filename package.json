@@ -1,0 +1,13 @@
+{
+    "name": "@thread/website",
+    "workspaces": [
+        "libs/app",
+        "libs/fe"
+    ],
+    "scripts": {
+        "build": "npm run fe:build && npm run build -w @thread/app",
+        "fe:build": "npm run build -w @thread/client",
+        "fe:dev": "npm run dev -w @thread/client",
+        "app:dev": "npm run start:dev -w @thread/app"
+    }
+}

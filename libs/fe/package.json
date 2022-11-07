@@ -1,0 +1,19 @@
+{
+  "name": "@thread/client",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "node ./esbuild.build.js",
+    "dev": "node ./esbuild.build.js --watch"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "tailwindcss": "^3.2.2",
+    "autoprefixer": "^10.4.7",
+    "esbuild": "^0.14.47",
+    "esbuild-style-plugin": "^1.6.0",
+    "postcss": "^8.4.14"
+  }
+}
