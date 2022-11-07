@@ -46,7 +46,7 @@ export function webhookToItem(
 ) {
   const parsedFields = Object.keys(webhook.fields).reduce(
     (acc: Record<string, unknown>, key) => {
-      const unwrapped = webhook.fields[key]['en-US'];
+      const unwrapped = webhook.fields[key]['en-GB'];
       acc[key] = fieldToDynamo(unwrapped);
       return acc;
     },
